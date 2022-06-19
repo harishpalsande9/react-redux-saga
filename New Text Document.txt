@@ -1,4 +1,4 @@
 View 
 Action
 Reducer > Root Reducer
-Store
+StoreStore
