@@ -1,13 +1,10 @@
-// export const cartData = (data = [], action) => {
-//   console.warn(" Reducer Called", action);
-//   if (action.type === "Add_TO_CART") {
-//     console.warn(" Reducer Called", action);
-//     return action.data;
-//   } else {
-//     return "No Action";
-//   }
-// };
+import { ADD_TO_CART } from "./constant";
 
 export const cardData = (data = [], action) => {
-  console.warn(action);
+  if (action.type === ADD_TO_CART) {
+    console.warn("Reducer Called", action);
+    return action.data;
+  } else {
+    return "No Action Called";
+  }
 };
