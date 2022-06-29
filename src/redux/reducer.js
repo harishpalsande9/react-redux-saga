@@ -1,7 +1,7 @@
 import { ADD_TO_CART } from "./constant";
 import { REMOVE_TO_CART } from "./constant";
 
-export const cardData = (data = [], action) => {
+export const cartData = (data = [], action) => {
   // if (action.type === ADD_TO_CART) {
   //   console.warn("Reducer Called", action);
   //   return action.data;
@@ -12,13 +12,10 @@ export const cardData = (data = [], action) => {
     case ADD_TO_CART:
       //Add To cart Logic
       console.warn(" ADD_TO_CART Condition", action);
-      return 1 + 1;
-    case REMOVE_TO_CART:
-      //Add To cart Logic
-      console.warn(" REMOVE_TO_CART Condition", action);
-      return 1 - 1;
+      return [action.data, ...data];
+
     default:
       //No Case Matched
-      return "0";
+      return data;
   }
 };

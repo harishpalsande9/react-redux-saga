@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
 
-import { cardData } from "./reducer";
+import { cartData } from "./reducer";
 
-export default combineReducers({ cardData });
+export default combineReducers({ cartData });

@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  background-color: orange;
+  height: 100px;
+}
+
+.cart-div {
+  float: right;
+  margin: 25px;
+  position: relative;
+}
+
+.cart-div img {
+  width: 30px;
+}
