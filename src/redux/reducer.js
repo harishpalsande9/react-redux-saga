@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from "./constant";
+import { ADD_TO_CART, EMPTY_CART } from "./constant";
 import { REMOVE_FROM_CART } from "./constant";
 
 export const cartData = (data = [], action) => {
@@ -17,7 +17,13 @@ export const cartData = (data = [], action) => {
     case REMOVE_FROM_CART:
       //Add To cart Logic
       console.warn(" REMOVE_FROM_CART Condition", action);
-      data.length = data.length - 1;
+      data.length = data.length ? data.length - 1 : [];
+      return [...data];
+
+    case EMPTY_CART:
+      //Add To cart Logic
+      console.warn(" EMPTY_CART Condition", action);
+      data = [];
       return [...data];
 
     default:
