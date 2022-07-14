@@ -1,6 +1,6 @@
 // import { createStore } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
-import { productSaga } from "./productSaga";
+import productSaga from "./productSaga";
 import rootReducer from "./rootReducer";
 import createSagaMiddleware from "redux-saga";
 
@@ -13,5 +13,4 @@ const store = configureStore({
 });
 
 sagaMiddleware.run(productSaga);
-
 export default store;

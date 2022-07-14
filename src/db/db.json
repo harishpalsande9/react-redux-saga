@@ -1,0 +1,22 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "mobile",
+      "colour": "Black",
+      "price": 15000,
+      "category": "Mobile",
+      "brand": "samsung",
+      "photo": "https://www.explera.in/wp-content/uploads/2022/01/img-world-dubai.jpg"
+    },
+    {
+      "id": 2,
+      "name": "laptop",
+      "colour": "silver",
+      "price": 15000,
+      "category": "laptop",
+      "brand": "dell",
+      "photo": "https://www.explera.in/wp-content/uploads/2022/01/img-world-dubai.jpg"
+    }
+  ]
+}
